@@ -16,8 +16,8 @@ $outputData = [];
 $dataCount = 0;
 while($row =  $stmt->fetch(PDO::FETCH_ASSOC)){
     //出力データの作成
-    $outputData[$dataCount]["id"] = $row["id"];
     $outputData[$dataCount]["name"] = $row["name"];
+    $outputData[$dataCount]["id"] = $row["id"];
     $outputData[$dataCount]["name_kana"] = $row["name_kana"];
     $outputData[$dataCount]["birthday"] = $row["birthday"];
     $outputData[$dataCount]["gender"] = $row["gender"];
